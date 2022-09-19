@@ -9,7 +9,7 @@
 
 <body>
     <h1>Hello, World! New web page, who is this?</h1>
-    <img src="icee.jpg" alt="icee man"> 
+    <img src="icee.jpg" alt="icee man" height="100"> 
 <!-- reminder - no method atttribute specified, so it's GET-->
     <form action="submission.html">
 
@@ -23,9 +23,29 @@
         </p>
 
         <p>
-            <label for="last">Tel me a story...</label>
+            <label for="last">Tell me a story...</label>
             <textarea name="area" id="area" rows="5" placeholder="Enter multi line text here"></textarea>
         </p>
+
+        <p>
+            <label for="last">Tell me another story...</label>
+            <textarea name="area2" id="area2" rows="5" cols="40" placeholder="Enter longer story"></textarea>
+        </p>
+
+        <p>
+            <label for="checks">Check Me</label>
+            <input type="checkbox" name="checks" id="checks">
+        </p>
+
+        <p>
+            <label for="rating">Rate this Page</label>
+            <input type="radio" name="rating" value="0" id="rating">
+            <input type="radio" name="rating" value="1">
+            <input type="radio" name="rating" value="2">
+            <input type="radio" name="rating" value="3">
+            <input type="radio" name="rating" value="4">
+        </p>
+
         <input type="submit" value="Submit Form Data">
     </form>
 </body>
