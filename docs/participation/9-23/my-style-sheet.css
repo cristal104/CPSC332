@@ -1,0 +1,8 @@
+li {
+    background-color: blanchedalmond;
+}
+
+#main-header:hover::after{
+    content: " BOO";
+    background-color: blueviolet;
+}
