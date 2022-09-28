@@ -7,13 +7,18 @@
     <title>Flex Box Layout</title>
     <style>
         #container {
+            background-color: rebeccapurple;
             display: flex;
+            float:right;
         }
-        nav {
+        #nav {
+            display: flex;
+            float: left;
             flex: 0 1 40%;
             background-color: green;
         }
         main {
+            display: flex;
             flex: 0 1 60%;
             background-color: blue;
         }
@@ -27,10 +32,8 @@
         Header
     </header>
   <!-- Flexbox layout -->
-  <div id="container">
-    <nav>Nav</nav>
-    <main>Main</main>
- </div>
+  <div id="container">container</div>
+  <div id="nav">nav</div>
 </body>
 
 </html>

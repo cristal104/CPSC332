@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>  
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewpoint" content="width=device-width, initial-scalee=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+        display: grid;
+        font-size: 2em;
+        text-align: center;
+        grid-template-areas: 
+        "head head head"
+        "nav article ."
+        ". . .";
+        }
+
+        header {
+        background: cornflowerblue;
+        grid-area: head;
+        grid-column: 1 / 4;
+        }
+
+        nav {
+        background: khaki;
+        grid-area: nav;
+        }
+
+        article {
+        background: darkseagreen;
+        grid-area: article;
+        grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>  
+    <article>Article</article>
+ </body>
+
+</html>
