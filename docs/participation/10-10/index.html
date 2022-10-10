@@ -1,0 +1,114 @@
+<!-- 
+    CPSC 332 Participation Index Page
+    Cristal Meza
+    Fall 2022
+-->
+<!DOCTYPE html>
+<html lang="eng">
+<head>  
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewpoint" content="width=device-width, initial-scalee=1.0">
+    <title>10-10 Participation</title>
+    <script>
+        window.onload = function (){
+
+            // printTwoThingsToTheConsole("One", 2);
+            // arrowAdd2(40,1,2);
+            var myInt = 42;
+            let myOtherInt = 9001; // prefer this
+            anotherInt = 9000; // avoid this
+
+            //alert("I'm annoying!")
+
+            const SOME_VALUE = 2.14150;
+            let myOtherVar = null;
+
+            // if(true){
+            //     let y = 42
+            // }
+            try{
+                arrowAdd2(40,1,2);
+            } catch(error){
+                console.log(error);
+            }
+            // finally{}
+
+            let arrowAdd2 = (x,y,z) => x + 2;
+            arrowAdd2(40,1,2);
+
+            var myArray = [1,2,3,4];
+            for (let i = 0; i < myArray.length; i++){
+                console.log(myArray[i]);
+            }
+
+            for(const myVal of myArray){
+                console.log(myVal);
+            }
+            myArray.forEach(function(item, i){
+                //anything here
+                console.log(item + " " + i);
+            });
+
+            var myObject = {
+                // add properties here
+                name: "defaultName",
+                someNumber: 42,
+                anArray: [1,2,3,4,5,6],
+
+                //object methods
+                echo: function(value){
+                    console.log(value);
+                },
+
+                get numberPlusOne(){
+                    return this.someNumber + 1;
+                },
+                
+                set someNumberPlusAnother(num){
+                    this.someNumber += num;
+                }
+            };
+            myObject.name = 'Bob Smith';
+            console.log(myObject.name);
+
+            console.log(myObject.numberPlusOne);
+            console.log(myObject.someNumberPlusAnother = 9000);
+            console.log(myObject.someNumber);
+
+            let dateTimeNow = new Date();
+            colsole.log(dateTimeNow);
+        }
+
+        var currentDate = {
+            dateTime: null
+        }
+
+        document.getElementById("update-date")
+            .addEventListener("click", pizzaTime);
+
+        function pizzaTime(){
+            console.log("Is it Pizza Time???")
+        };
+
+    </script>
+</head>
+    <body>
+        <h1>More Javascript!!!</h1>
+
+        <div>
+            <p>
+                <span id="date-text">
+                    Click the button...
+                </span>
+            </p>
+            <p>
+                <button id="update-datee">
+                    Click to see current date time!
+                </button>
+            </p>
+        </div>
+
+        <a href="/docs/index.html">Back to participation page</a>
+    </body>
+</html>
