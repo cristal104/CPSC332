@@ -10,7 +10,7 @@
     </style>
     <!-- bitsofcode.de/async-vs-defer/-->
     <!-- async loads the page at the same time as the script -->
-    <!-- <script src="script.js" async></script> -->
+    <!--<script src="script.js" async></script>--->
     <!-- defer loads the script at the same time BUT script is not processed until the page loads-->
     <!-- <script src="script.js" defer></script> -->
     <script>
@@ -19,6 +19,7 @@
 
             //document represents the entire DOM
             var thisDocument = document.getElementById("container");
+            console.log(window.innerHTML);
             //window object
             console.log(window.innerWidth);
             console.log(window.innerHeight);
@@ -40,6 +41,9 @@
     <div id="container">
         This is div content
     </div>
+    <!-- <div id="container">
+        This is another content
+    </div> -->
     <div>
         <ul class="unordered-list">
             <li>Item 1</li>
@@ -73,7 +77,7 @@
             </p>
         </div>
     </fieldset>
-    <a href="/docs/index.html">Back to participation page</a>
+    <a href=".../.../index.html">Back to participation page</a>
 </body>
 
 </html>
