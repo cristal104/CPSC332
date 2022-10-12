@@ -33,8 +33,32 @@
             var firstDiv = document.querySelector("body div");
 
             //event handler
-            document.getElementById().addEventListener("", );
+            document.getElementById("date-button-start").addEventListener("click",startClock);
+            document.getElementById("date-button-stop").addEventListener("click", stopClock);
 
+            var clock = null;
+
+            function startClock(){
+                console.log("start clock clicked");
+                clock = setInterval(updateClock, 1000);
+            }
+
+            function stopClock(){
+                console.log("stop clock clicked");
+                clearInterval(clock);
+            }
+
+            function updateClock(){
+                console.log("I'm a clock!");
+            }
+
+            let dateTimeNow = new Date();
+            colsole.log(dateTimeNow);
+
+            var currentDate = {
+            dateTime: null
+        }
+        // document.getElementById("date-span").addEventListener("",);
 
         }//end of onload function
     </script>
