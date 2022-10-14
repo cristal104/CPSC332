@@ -74,6 +74,8 @@
                     // add a style
                     div.style.setProperty("background-color", "yellow"); //css property
                 }
+                // insert a rule into the stylesheet
+                document.styleSheets[0].insertRule("li {backgroundd-color: purple;}");
             });
 
         }//end of onload function
@@ -105,7 +107,7 @@
     </ul>
     </p>
     <!-- #1 -->
-    <fieldset>
+    <fieldset id="fieldset">
         <legend>
             <strong><em>JavaScript Clock</em></strong>
         </legend>
