@@ -78,17 +78,17 @@
                 document.styleSheets[0].insertRule("li {background-color: purple;}");
             });
 
-                document.addEventListener("fieldset").addEventListener("mouseleave", function(){
-                    // let divs = document.getElementsByTagName("div");
-                    // for(const div of divs){
-                    //     // add a style inlinee
-                    //     div.style.removeProperty("background-color"); //css property
-                    // }
-                    // // insert a rule into the stylesheet
-                    // document.styleSheets[0].deleteRule("li");
+                // document.addEventListener("fieldset").addEventListener("mouseleave", function(){
+                //     // let divs = document.getElementsByTagName("div");
+                //     // for(const div of divs){
+                //     //     // add a style inlinee
+                //     //     div.style.removeProperty("background-color"); //css property
+                //     // }
+                //     // // insert a rule into the stylesheet
+                //     // document.styleSheets[0].deleteRule("li");
 
-                    //1. add event handlers for buttons
-                    });
+                //     //1. add event handlers for buttons
+                //     });
                 document.getElementById("remove-div")
                     .addEventListener("click", removeDiv);
                 document.getElementById("add-div")
@@ -123,6 +123,9 @@
                     document.getElementById("temp-div").appendChild(newP);
                 }
             };
+            document.getElementById("temp-div").addEventListener("click", () => {
+                alert("temp-div clicked")
+            });
 
         }//end of onload function
     </script>
